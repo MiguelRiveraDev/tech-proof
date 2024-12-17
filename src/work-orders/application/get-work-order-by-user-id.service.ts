@@ -6,13 +6,13 @@ import { USER_REPOSITORY } from '../../users/users.constants';
 import { WorkOrder } from '../domain/work-order';
 
 @Injectable()
-export class GetOrderByUserIdService {
+export class GetWorkOrderByUserIdService {
   constructor(
     @Inject(WORK_ORDER_REPOSITORY)
     private workOrderRepository: WorkOrderRepository,
     @Inject(USER_REPOSITORY)
     private userRepository: UserRepository,
-  ) {}
+  ) { }
 
   async execute(assignedUserId: string): Promise<WorkOrder[]> {
     const assignedUser = await this.userRepository.findById(assignedUserId);
