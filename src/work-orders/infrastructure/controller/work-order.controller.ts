@@ -1,4 +1,4 @@
-import { Controller, Get, Put, Delete, Param, Body } from '@nestjs/common';
+import { Controller, Get, Put, Delete, Post, Param, Body } from '@nestjs/common';
 import { WorkOrderService } from '../../application/work-order.service';
 
 @Controller('work-orders')
@@ -28,5 +28,14 @@ export class WorkOrderController {
   @Delete(':id')
   async remove(@Param('id') id: string) {
     return await this.workOrderService.deleteWorkOrder(id);
+  }
+
+  @Post()
+  async run(@Body() createWorkOrderDto: any) {
+    return await this.workOrderService.createWorkOrder(
+      createWorkOrderDto.description,
+      createWorkOrderDto.status,
+      createWorkOrderDto.assignedUser,
+    );
   }
 }
