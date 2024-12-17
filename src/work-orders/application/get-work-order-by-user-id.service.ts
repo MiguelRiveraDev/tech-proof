@@ -1,7 +1,7 @@
 import { Injectable, Inject } from '@nestjs/common';
 import { WorkOrderRepository } from '../domain/work-order-repository';
 import { WORK_ORDER_REPOSITORY } from '../work-order.constants';
-import { UserRepository } from '../../users/domain/UserRepository';
+import { UserRepository } from '../../users/domain/user-repository';
 import { USER_REPOSITORY } from '../../users/users.constants';
 import { WorkOrder } from '../domain/work-order';
 

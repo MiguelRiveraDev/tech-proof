@@ -1,9 +1,9 @@
 import { Controller, Get, Put, Delete, Post, Param, Body } from '@nestjs/common';
-import { CreateWorkOrderService } from '../../application/create-work-order.service';
-import { GetWorkOrderByUserIdService } from '../../application/get-work-order-by-user-id.service';
-import { GetAllWorkOrdersService } from '../../application/get-all-work-orders.service';
-import { UpdateWorkOrderService } from '../../application/update-work-order.service';
-import { DeleteWorkOrderService } from '../../application/delete-work-order.service';
+import { CreateWorkOrderService } from '../application/create-work-order.service';
+import { GetWorkOrderByUserIdService } from '../application/get-work-order-by-user-id.service';
+import { GetAllWorkOrdersService } from '../application/get-all-work-orders.service';
+import { UpdateWorkOrderService } from '../application/update-work-order.service';
+import { DeleteWorkOrderService } from '../application/delete-work-order.service';
 
 @Controller('work-orders')
 export class WorkOrderController {

@@ -1,5 +1,5 @@
 import { DomainEventPublisher } from '../../shared/domain/DomainEventPublisher';
-import { UserCreatedEvent } from './UserCreatedEvent';
+import { UserCreatedEvent } from './user-created-event';
 
 export class User {
   constructor(
