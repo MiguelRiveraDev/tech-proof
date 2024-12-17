@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { WorkOrder } from '../../domain/work-order';
-import { WorkOrderRepository } from '../../domain/work-order-repository';
+import { WorkOrder } from '../domain/work-order';
+import { WorkOrderRepository } from '../domain/work-order-repository';
 
 @Injectable()
 export class InMemoryWorkOrderRepository implements WorkOrderRepository {

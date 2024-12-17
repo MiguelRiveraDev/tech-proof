@@ -2,8 +2,8 @@ import { TestingModule, Test } from '@nestjs/testing';
 import { DomainEventPublisher } from '../../src/shared/domain/DomainEventPublisher';
 import { CreateUserService } from '../../src/users/application/create-user.service';
 import { User } from '../../src/users/domain/User';
-import { UserCreatedEvent } from '../../src/users/domain/UserCreatedEvent';
-import { UserRepository } from '../../src/users/domain/UserRepository';
+import { UserCreatedEvent } from '../../src/users/domain/user-created-event';
+import { UserRepository } from '../../src/users/domain/user-repository';
 import { USER_REPOSITORY } from '../../src/users/users.constants';
 
 describe('CreateUserService', () => {

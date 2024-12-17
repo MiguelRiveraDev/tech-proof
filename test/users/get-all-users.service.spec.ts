@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { GetAllUsersService } from '../../src/users/application/get-all-users.service';
-import { UserRepository } from '../../src/users/domain/UserRepository';
+import { UserRepository } from '../../src/users/domain/user-repository';
 import { USER_REPOSITORY } from '../../src/users/users.constants';
 import { User } from '../../src/users/domain/User';
 

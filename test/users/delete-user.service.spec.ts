@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { DeleteUserService } from '../../src/users/application/delete-user.service';
-import { UserRepository } from '../../src/users/domain/UserRepository';
-import { InMemoryUserRepository } from '../../src/users/infrastructure/InMemoryUserRepository';
+import { UserRepository } from '../../src/users/domain/user-repository';
+import { InMemoryUserRepository } from '../../src/users/infrastructure/in-memory-user-repository';
 import { USER_REPOSITORY } from '../../src/users/users.constants';
 
 describe('DeleteUserService', () => {

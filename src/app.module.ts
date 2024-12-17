@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { UserModule } from './users/users.module';
-import { WorkOrdersModule } from './work-orders/work-orders.module';
+import { UserModule } from './users/infrastructure/users.module';
+import { WorkOrdersModule } from './work-orders/infrastructure/work-orders.module';
 
 @Module({
   imports: [UserModule, WorkOrdersModule],
